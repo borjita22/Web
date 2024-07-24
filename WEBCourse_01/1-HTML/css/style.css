@@ -1,0 +1,323 @@
+*
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+#navigation-bar
+{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+#navigation-bar ul
+{
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    list-style: none;
+}
+
+#navigation-bar ul li a
+{
+    font-size: 16px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s, color 0.2s;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#navigation-bar ul li a:hover
+{
+    transform: scale(1.1);
+    color: crimson;
+}
+
+main
+{
+    padding: 20px;
+    background-color: aliceblue;
+    height: 100%;
+}
+
+.hero
+{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero img
+{
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    
+}
+
+.presentation
+{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#aboutme
+{
+    
+    width: 90%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px 20px 50px;
+    box-shadow: 10px 10px 0px rgb(0 0 0 / 50%), -10px -10px 0px rgb(255 114 114 / 80%);
+}
+
+.aboutme-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+
+}
+
+.aboutme-img
+{
+    max-width: 100%;
+    height: auto;
+    margin-right: 100px;
+    background-position: center;
+}
+
+.aboutme-text
+{
+    height: auto;
+    width: 40%;
+    margin-left: 40px;
+    text-align: left;
+
+}
+
+#aboutme h2
+{
+    font-size: 40px;
+    text-shadow: 0px 0px 10px rgb(255 114 114 / 80%);
+}
+
+
+#projects
+{
+    width: 90%;
+    height: auto;
+    background-color: beige;
+    text-align: center;
+    padding: 5px;
+    margin: 5%;
+}
+
+.projects
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+#projects h2
+{
+    color: coral;
+}
+
+.earth-project
+{
+     width: 400px;
+     height: 400px;
+     background: white;
+     border-radius: 10px;
+     position: relative;
+     margin: 25px;
+     background-image: url("../images/earth.jpeg");
+     background-size: cover;
+     background-position: center;
+
+}
+
+.text
+{
+    position: absolute;
+    background-color: white;
+    height: 65px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.text:hover
+{
+    height: 175px;
+    transition: 0.2s;
+}
+
+.button
+{
+    border: 5px solid lightblue;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 160px;
+}
+
+.bbc-project
+{
+     width: 400px;
+     height: 400px;
+     background: white;
+     border-radius: 10px;
+     position: relative;
+     margin: 25px;
+     background-image: url("../images/BBC_News_2019.svg.png");
+     background-size: cover;
+     background-position: center;
+
+}
+
+.contact
+{
+    width: 100%;
+    height: auto;
+    background-color: rgba(3, 3, 3, 45%);
+    border-radius: 10px;
+    padding: 25px 0 50px 0;
+    align-items: center;
+}
+
+.contact h2, .contact p
+{
+    color: white;
+    text-align: center;
+}
+
+.contact p
+{
+    margin-bottom: 50px;
+}
+
+.contact-form
+{
+    max-width: 800px;
+    display: flex;
+    text-align: left;
+    margin: 0 auto;
+    color: white;
+}
+
+.contact-form label
+{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.message
+{
+    display: flex;
+    flex-direction: column;
+}
+.message textarea
+{
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.contact-details
+{
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-details input
+{
+    width: 300px;
+    border-radius: 5px;
+    border: 0px;
+    padding: 15px 20px;
+}
+
+.message button
+{
+    color: aquamarine;
+    border: 0;
+    border-radius: 5px;
+    background: lightblue;
+    width: 150px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.message button:hover
+{
+    background: black;
+    color: white;
+    transition: 0.2s;
+}
+
+footer
+{
+    height: 100px;
+    background-color: grey;
+}
+
+footer .container
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.social-media
+{
+    font-size: 200%;
+    width: auto;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.social-media a i
+{
+    color: white;
+    transition: 0.2s;
+}
+
+.social-media a i:hover
+{
+    color: lightblue;
+    transition: 0.2s;
+}
+
+.copyright
+{
+    margin-left: 20px;
+    color: white;
+}
