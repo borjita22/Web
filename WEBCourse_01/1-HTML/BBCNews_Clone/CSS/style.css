@@ -1,0 +1,304 @@
+
+#topbar
+{
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bbc_logo
+{
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+    float: left;
+    margin-right: 10px;
+}
+
+.topbar-section
+{
+    float: left;
+    border-left: 1px #CCCCCC solid;
+    height: 100%;
+    margin-left: 10px;
+}
+
+#user_icon
+{
+    width: auto;
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#signin-text
+{
+    font-weight: bold;
+    float: right;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+#bell-div
+{
+    width: auto;
+    float: left;
+}
+
+#bell_icon
+{
+    width: auto;
+    height: 65%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.topbar-menu
+{
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.topbar-menu p
+{
+    margin-left: 10px;
+    float: left;
+}
+
+#more-arrow
+{
+    height: 20%;
+    width: auto;
+    margin-left: 10px;
+    margin-top: 22px;
+}
+
+#search-box
+{
+    background-color: rgb(158, 156, 156);
+    border: none;
+    height: 50%;
+    width: 200px;
+    font-weight: bold;
+    font-size: 115%;
+    padding: 5px;
+    margin: 8px 0px 0px 10px;
+    float: left;
+}
+
+#search-box-lupa
+{
+    height: 70%;
+    width: auto;
+    margin: 8px 0 0 0;
+    background-color: rgb(158, 156, 156);
+}
+
+.clear
+{
+    clear: both;
+}
+
+#menu-bar-container
+{
+    border-top: 2px solid #CCCCCC;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+
+#menu-bar
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1
+{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 50px;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-left: 20px;
+    float: left;
+}
+
+#local-news
+{
+    border: 1px rgb(200, 104, 104) solid;
+    float: right;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+#local-news a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    top: 6px;
+}
+
+#local-news a:hover
+{
+    text-decoration: underline;
+}
+
+#locate-news-img
+{
+    width: 30px;
+    height: auto;
+    position: relative;
+}
+
+#menu-bar-2-container
+{
+    background-color: rgb(172, 1, 1);
+    width: 100%;
+    height: 50px;
+    margin: 15px 0 0 0;
+}
+
+#menu-bar-2
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-bar-section
+{
+    padding: 0 20px;
+    font-size: 150%;
+    border-right: 1px solid white;
+    float: left;
+    position: relative;
+    top: 10px;
+}
+
+.menu-bar-section a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-bar-section a:hover
+{
+    text-decoration: underline;
+}
+
+.no-border
+{
+    border: none !important;
+}
+
+#down-arrow
+{
+    float: right;
+    height: 15px;
+    width: auto;
+    margin: 7px 0 0 10px;
+}
+
+#page-container
+{
+    width: 1000px;
+    height: 0 auto;
+}
+
+#main-article h2
+{
+    font-weight: normal;
+    border-bottom: 4px solid red;
+    width: 120px;
+    margin-left: 20px;
+}
+
+#main-article h3
+{
+    font-size: 220%;
+    margin: 0 0 0 20px;
+}
+
+#main-article h3 a
+{
+    text-decoration: none;
+    color: black;
+    padding: 0;
+}
+
+#main-article h3 a:hover
+{
+    color: rgb(64, 64, 186);
+}
+
+#article-container
+{
+    float: left;
+    margin: 0;
+    width: 750px;
+}
+
+#article-container img
+{
+    float: right;
+    width: 450px;
+    height: 250px;
+    margin: 10px 10px 0 0;
+}
+
+#article-summary
+{
+    width: 240px;
+    text-align: justify;
+    margin-left: 20px;
+    float: left;
+}
+
+#article-summary img
+{
+    width: 15px;
+    height: auto;
+    float: left;
+    margin-right: 5px;
+    position: relative;
+    top: -7px;
+}
+
+.article-date
+{
+    color: rgb(158, 153, 153);
+}
+
+#article-summary a
+{
+    float: right;
+    text-decoration: none;
+    position: relative;
+    top: 1.5px;
+    color: rgb(216, 73, 73);
+    border-left: 1px solid #CCCCCC;
+    padding-left: 10px;
+}
+
+#article-summary a:hover
+{
+    color: rgb(64, 64, 186);
+}
