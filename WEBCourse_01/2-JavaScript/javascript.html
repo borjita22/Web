@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+    </head>
+
+    <body>
+
+        <p id="text">Hello world!</p>
+
+        <button id="MyButton">Change Text</button>
+
+        <p id="secondParagraph">JavaScript is ...</p>
+
+        <button id="secondButton">Change Text</button>
+
+        <button id="thirdButton"> Add new content</button>
+
+        <div id="text-container"></div>
+
+
+
+        <script type="text/javascript"> 
+
+            document.getElementById("MyButton").onclick = function()
+            {
+                document.getElementById("text").innerHTML = "Hello Borch!";
+            }
+
+            document.getElementById("secondButton").onclick = function()
+            {
+                document.getElementById("secondParagraph").prepend("I think ");
+                document.getElementById("secondParagraph").append(" Awesome!");
+            }
+
+            const addButton = document.getElementById("thirdButton");
+            const textContainer = document.getElementById("text-container");
+
+            addButton.addEventListener('click', appendNewText)
+
+            function appendNewText()
+            {
+                const newText = document.createElement('p')
+                newText.textContent = "Este es un nuevo texto creado en JS";
+
+                textContainer.appendChild(newText);
+            }
+            
+
+        </script>
+        
+    </body>
+</html>

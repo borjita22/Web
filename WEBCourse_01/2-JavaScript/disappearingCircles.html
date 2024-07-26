@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Disappearing Circles</title>
+
+
+        <style>
+            #circle1
+            {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+
+            #circle2
+            {
+                width: 100px;
+                height: 100px;
+                background-color: green;
+            }
+
+            #circle3
+            {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            }
+
+            .circle
+            {
+                border-radius: 50%;
+                float: left;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        
+        <div id="circle1" class="circle">
+
+        </div>
+
+        <div id="circle2" class="circle">
+
+        </div>
+
+        <div id="circle3" class="circle">
+
+        </div>
+
+
+        <script type="text/javascript">
+
+            var circles = document.getElementsByClassName("circle");
+
+            Array.from(circles).forEach(circle => {
+            // Aquí puedes hacer algo con cada elemento 'circle'
+                circle.addEventListener('click', function() {
+                    // Ocultar el elemento cuando se hace clic
+                    circleDisappear(circle);
+                });
+            });
+
+            function circleDisappear(element)
+            {
+                element.style.display = "none";
+            }
+
+        </script>
+    </body>
+</html>
