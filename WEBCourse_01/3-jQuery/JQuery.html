@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+        <script src="jquery-ui/jquery-ui.js"></script>
+
+        <style type="text/css">
+
+            .circle
+            {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                border-radius: 50%;
+            }
+
+            #draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+            #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+  </style>
+
+        </style>
+
+        
+    </head>
+
+    <body>
+
+        <div class="circle">
+
+        </div>
+
+        <br>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempora, doloremque beatae cum dolorum debitis! 
+            Fuga, quisquam laborum! Aut vero deserunt accusamus porro est iste facilis nobis, dolorum ex quibusdam.</p>
+
+        <button id="toggle-button">Toggle fade text</button>
+
+
+        <div id="draggable" class="ui-widget-content">
+            <p>Drag me to my target</p>
+        </div>
+           
+        <div id="droppable" class="ui-widget-header">
+        <p>Drop here</p>
+        </div>
+
+        <div style="clear: both;"></div>
+
+        <div id="resizable" class="ui-widget-content">
+            <h3 class="ui-widget-header">Resizable</h3>
+          </div>
+       
+
+        <script type="text/javascript">
+
+            $(".circle").hover(function()
+            {
+                $(".circle").css("background-color", "red");
+            });
+
+            $(".circle").mouseleave(function()
+            {
+                $(".circle").css("background-color", "green");
+            });
+
+            $(".circle").click(function()
+            {
+                $(this).fadeOut(1000, alertMyself);
+            });
+
+            function alertMyself()
+            {
+                alert("Function deployed on fade out!");
+            }
+
+            $("#toggle-button").click(function()
+            {
+                if($("p").css("display") == "none")
+                {
+                    $("p").fadeIn("slow");
+                }
+                else
+                {
+                    $("p").fadeOut("slow");
+                }
+                
+            })
+
+            //laura es la mas wapa del mundo , te amo
+
+
+            //expresiones regulares jQuery
+
+            let regex = /is/;
+
+            let string = "Regex is great";
+
+            let result = string.match(regex);
+
+            //alert(result);
+
+            //jQuery UI draggable element
+
+            $( "#draggable" ).draggable({ axis: "x" });
+
+            $( "#droppable" ).droppable({
+                drop: function( event, ui ) {
+                $( this )
+                .addClass( "ui-state-highlight" )
+                .find( "p" )
+                .html( "Dropped!" );
+                }
+            });
+
+            $( "#resizable" ).resizable();
+
+        </script>
+
+    </body>
+</html>

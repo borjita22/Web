@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Many Fingers?</title>
+</head>
+<body>
+
+    <p>How many fingers am I holding up?</p>
+    <br>
+
+    <p>
+        <select id="entered-text">
+
+            <option>0</option>
+
+            <option>1</option>
+
+            <option>2</option>
+
+            <option>3</option>
+
+            <option>4</option>
+
+            <option>5</option>
+        
+        </select>
+    
+    <button id="guess-button">Guess!</button>
+
+    </p>
+
+    <p id="tweet"> This is a text</p>
+
+    
+    <script type="text/javascript">
+        //necesito comprobar el valor introducido en el campo text
+        //necesito comparar ese valor con el valor dado por una variable que va cambiando cada vez que le des al boton de guess
+        var correctFingersNumber = getNewRandomFingersNumber(); //numero aleatorio del 0 al 5
+
+        
+
+        document.getElementById("guess-button").onclick = function()
+        {
+
+            var enteredTxt = document.getElementById("entered-text").value;
+            console.log("Entered txt value = " + enteredTxt);
+            console.log("Correct value = " + correctFingersNumber);
+
+            if(enteredTxt == correctFingersNumber)
+            {
+                alert("The number is correct!");
+            }
+            else
+            {
+                alert("No!, the correct answer is " + correctFingersNumber);
+            }
+            correctFingersNumber = getNewRandomFingersNumber();
+        }
+
+        function getNewRandomFingersNumber()
+        {
+            return Math.floor(Math.random() * 6);
+        }
+
+
+        var tweets = ["Element 1", "Element 2", "Element 3", "Element 4", "Element 5", "Element 6"]
+        var tweet = document.getElementById("tweet");
+        tweet.innerHTML = "";
+
+        var i = 0;
+
+        while(i < tweets.length)
+        {
+            tweet.innerHTML += tweets[i] + "<br>";
+            i++;
+        }
+
+    </script>
+
+
+    
+
+
+
+</body>
+</html>

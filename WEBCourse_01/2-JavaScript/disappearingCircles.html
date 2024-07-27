@@ -34,6 +34,13 @@
                 float: left;
                 margin-right: 10px;
                 cursor: pointer;
+                margin-bottom: 30px;
+            }
+
+            .clear
+            {
+                clear: both;
+                
             }
 
         </style>
@@ -54,6 +61,15 @@
 
         </div>
 
+        <div class="clear"></div>
+
+        <input type="text" id="text">
+        <button id="change-text-button">Change text</button>
+
+        <div class="clear"></div>
+
+        <p id="text-to-change">This is some text</p>
+
 
         <script type="text/javascript">
 
@@ -71,6 +87,22 @@
             {
                 element.style.display = "none";
             }
+
+            document.getElementById("change-text-button").onclick = function()
+            {
+                var textInput = document.getElementById("text").value;
+
+                var textToChange = document.getElementById("text-to-change");
+
+                textToChange.innerHTML = textInput;
+            }
+
+            var myArray = new Array();
+
+            myArray[0] = "Laura";
+            myArray[1] = "Linda";
+
+            console.log(myArray);
 
         </script>
     </body>
