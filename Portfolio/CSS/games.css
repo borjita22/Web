@@ -1,0 +1,200 @@
+#game-skills
+{
+    padding: 20px;
+}
+
+#game-skills h1
+{
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+#game-skills-container
+{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.skill-slot
+{
+    background-color: rgb(194, 217, 225);
+    box-shadow:10px 10px 10px 10px #888888;
+    margin: 20px auto;
+    width: 20%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    padding: 20px 10px 10px 10px;
+    transition: transform 0.5s ease;
+}
+.skill-slot:hover
+{
+    transform: scale(1.2);
+    z-index: 6;
+}
+
+
+.skill-slot-list li
+{
+    margin-top: 10px;
+    text-align: left;
+}
+
+#game-engines
+{
+    width: 100%;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+
+#game-engines h1
+{
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+#engines-container
+{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.engine-slot
+{
+    width: 25%;
+    height: 400px;
+    background: white;
+    background-color: red;
+    border-radius: 10px;
+    position: relative;
+    margin: 25px;
+    overflow: hidden;
+    background-image: url("../Resources/Imgs/earth.jpeg");
+    background-size: cover;
+    background-position: center;
+    box-shadow:10px 10px 10px 10px #888888;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text
+{
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: height 0.5s ease;
+}
+
+.text:hover
+{
+    height: 175px;
+    transition: 0.5s;
+}
+
+.button
+{
+    border: 5px solid lightblue;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 160px;
+}
+
+#game-projects
+{
+    width: 100%;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+#game-projects h1
+{
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+#projects-container
+{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-slot
+{
+    width: 25%;
+    height: 400px;
+    background: white;
+    background-color: red;
+    border-radius: 10px;
+    position: relative;
+    margin: 25px;
+    overflow: hidden;
+    background-image: url("../Resources/Imgs/earth.jpeg");
+    background-size: cover;
+    background-position: center;
+    box-shadow:10px 10px 10px 10px #888888;
+    transition: background-size 0.5s ease, background-position 0.5s ease;
+}
+
+.project-slot:hover
+{
+    background-size: 150%;
+    background-position: center;
+}
+
+@media (min-width: 1024px) {
+    #engines-container {
+        position: relative;
+    }
+}
+
+
+@media (max-width: 768px)
+{
+    #game-skills
+    {
+        text-align: center;
+    }
+    #game-skills h1
+    {
+        margin: 0;
+    }
+    #game-skills-container
+    {
+        flex-direction: column;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+    #game-engines
+    {
+        text-align: center;
+    }
+
+    #engines-container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-slot
+    {
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    .engine-slot
+    {
+        margin-left: 50px;
+        width: 50%;
+    }
+}
